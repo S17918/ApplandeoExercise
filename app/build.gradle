@@ -41,24 +41,6 @@ dependencies {
     implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
 
-    //Jetpack navigation
-    implementation 'androidx.navigation:navigation-fragment-ktx:2.3.5'
-    implementation 'androidx.navigation:navigation-ui-ktx:2.3.5'
-
-    //Retrofit
-    implementation 'com.squareup.retrofit2:retrofit:2.9.0'
-    implementation 'com.squareup.retrofit2:converter-gson:2.9.0'
-
-    //Retrofit adapter for RxJava3
-    implementation 'com.squareup.retrofit2:adapter-rxjava3:2.9.0'
-
-    //RxJava
-    implementation 'io.reactivex.rxjava3:rxjava:3.0.13'
-    implementation 'androidx.compose.runtime:runtime-rxjava3:1.0.0-rc02'
-
-    //RxAndroid
-    implementation 'io.reactivex.rxjava3:rxandroid:3.0.0'
-
     //Lifecycle
     implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.4.0-alpha02'
     implementation 'androidx.lifecycle:lifecycle-livedata-ktx:2.4.0-alpha02'
@@ -68,6 +50,27 @@ dependencies {
     implementation 'androidx.lifecycle:lifecycle-service:2.4.0-alpha02'
     implementation 'androidx.lifecycle:lifecycle-process:2.4.0-alpha02'
     implementation 'androidx.lifecycle:lifecycle-reactivestreams-ktx:2.4.0-alpha02'
+
+    //Jetpack navigation
+    implementation 'androidx.navigation:navigation-fragment-ktx:2.3.5'
+    implementation 'androidx.navigation:navigation-ui-ktx:2.3.5'
+
+    //Retrofit
+    implementation 'com.squareup.retrofit2:retrofit:2.9.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.9.0'
+
+    //RxJava
+    implementation 'io.reactivex.rxjava3:rxjava:3.0.13'
+    implementation 'androidx.compose.runtime:runtime-rxjava3:1.0.0-rc02'
+
+    //Retrofit adapter for RxJava3
+    implementation 'com.squareup.retrofit2:adapter-rxjava3:2.9.0'
+
+    //RxAndroid
+    implementation 'io.reactivex.rxjava3:rxandroid:3.0.0'
+
+    //CardView
+    implementation "androidx.cardview:cardview:1.0.0"
 
     //Tests
     testImplementation 'androidx.arch.core:core-testing:2.1.0'

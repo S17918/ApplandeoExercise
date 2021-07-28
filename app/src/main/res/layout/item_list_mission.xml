@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/shopping_list_item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardBackgroundColor="@color/white"
+    android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:theme="@style/itemView">
+
+        <LinearLayout
+            android:padding="15sp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:src="@drawable/rocket_3807"
+                android:layout_width="50sp"
+                android:layout_height="50sp"/>
+            <LinearLayout
+                android:paddingHorizontal="20sp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/mission_name"
+                    android:fontFamily="@font/bold"
+                    android:textSize="16sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="TEST"/>
+                <TextView
+                    android:id="@+id/mission_id"
+                    android:textSize="12sp"
+                    android:fontFamily="@font/regular"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="ASD24D"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
