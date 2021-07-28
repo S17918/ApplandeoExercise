@@ -3,11 +3,10 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/navigation"
-    app:startDestination="@id/baseFragment">
-
+    app:startDestination="@id/missionListFragment">
     <fragment
-        android:id="@+id/baseFragment"
-        android:name="com.applandeo.excercise.BaseFragment"
-        android:label="fragment_base"
-        tools:layout="@layout/fragment_base" />
+        android:id="@+id/missionListFragment"
+        android:name="com.applandeo.excercise.ui.presentation.mission_list.MissionListFragment"
+        android:label="mission_list_fragment"
+        tools:layout="@layout/mission_list_fragment" />
 </navigation>

@@ -1,7 +1,8 @@
-package com.applandeo.excercise
+package com.applandeo.excercise.ui
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.applandeo.excercise.R
 
 class SingleActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

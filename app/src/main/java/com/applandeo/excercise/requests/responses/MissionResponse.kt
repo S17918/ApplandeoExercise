@@ -1,5 +1,6 @@
 package com.applandeo.excercise.requests.responses
 
+import com.applandeo.excercise.models.Mission
 import com.google.gson.annotations.SerializedName
 
 class MissionResponse (
