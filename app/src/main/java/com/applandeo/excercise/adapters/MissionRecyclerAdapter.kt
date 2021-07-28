@@ -21,7 +21,10 @@ class MissionRecyclerAdapter(private val clickListener: OnMissionListener) : Rec
     }
 
     override fun getItemCount(): Int {
-        return missionList.size
+        if(missionList.isNotEmpty()){
+            return missionList.size
+        }
+        return 0
     }
 
     fun setMissions(list: List<Mission>){

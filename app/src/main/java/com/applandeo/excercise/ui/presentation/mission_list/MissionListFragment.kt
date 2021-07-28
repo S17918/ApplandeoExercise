@@ -7,6 +7,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
+import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.applandeo.excercise.R
@@ -34,7 +35,7 @@ class MissionListFragment : Fragment(), OnMissionListener {
 
     }
 
-    fun initRecyclerView(){
+    private fun initRecyclerView(){
         recyclerView = requireView().findViewById(R.id.missions_list)
         adapter = MissionRecyclerAdapter(this)
         recyclerView?.layoutManager = LinearLayoutManager(context)
@@ -48,6 +49,6 @@ class MissionListFragment : Fragment(), OnMissionListener {
     }
 
     override fun onMissionClick(pos: Int) {
-
+        findNavController().navigate(R.id.showMission)
     }
 }

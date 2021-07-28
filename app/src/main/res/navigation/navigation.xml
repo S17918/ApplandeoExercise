@@ -7,6 +7,15 @@
     <fragment
         android:id="@+id/missionListFragment"
         android:name="com.applandeo.excercise.ui.presentation.mission_list.MissionListFragment"
-        android:label="mission_list_fragment"
-        tools:layout="@layout/mission_list_fragment" />
+        android:label="Current Missions"
+        tools:layout="@layout/mission_list_fragment" >
+        <action
+            android:id="@+id/showMission"
+            app:destination="@id/missionDetailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/missionDetailsFragment"
+        android:name="com.applandeo.excercise.ui.presentation.mission_details.MissionDetailsFragment"
+        android:label="mission_details_fragment"
+        tools:layout="@layout/mission_details_fragment" />
 </navigation>
