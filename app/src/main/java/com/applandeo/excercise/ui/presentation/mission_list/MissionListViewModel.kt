@@ -4,10 +4,9 @@ import androidx.lifecycle.LiveData
 import androidx.lifecycle.ViewModel
 import com.applandeo.excercise.models.Mission
 import com.applandeo.excercise.repositories.MissionRepository
+import com.applandeo.excercise.repositories.MissionRepositoryImpl
 
-class MissionListViewModel : ViewModel() {
-
-    private val repository: MissionRepository = MissionRepository()
+class MissionListViewModel(private val repository: MissionRepository) : ViewModel() {
 
     fun getMissions(): LiveData<List<Mission>>{
         return repository.getMissions()

@@ -1,13 +1,129 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ui.presentation.mission_details.MissionDetailsFragment">
 
-    <TextView
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="Mission details fragment" />
+        android:layout_height="wrap_content"
+        android:padding="16sp"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="150sp"
+            android:layout_height="150sp"
+            android:src="@drawable/rocket_3807"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="50sp"/>
 
-</FrameLayout>
+        <TextView
+            android:id="@+id/mission_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10sp"
+            android:textSize="20sp"
+            android:textAlignment="center"
+            android:fontFamily="@font/bold"/>
+
+        <TextView
+            android:id="@+id/mission_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp"
+            android:textSize="16sp"
+            android:textAlignment="center"
+            android:fontFamily="@font/regular"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10sp"
+            android:textSize="18sp"
+            android:textAlignment="center"
+            android:fontFamily="@font/bold"
+            android:text="@string/manufacturers"/>
+
+        <TextView
+            android:id="@+id/manufacturers"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp"
+            android:textSize="16sp"
+            android:textAlignment="center"
+            android:fontFamily="@font/regular"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10sp"
+            android:textSize="18sp"
+            android:textAlignment="center"
+            android:fontFamily="@font/bold"
+            android:text="@string/payloads"/>
+
+        <TextView
+            android:id="@+id/payload_ids"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp"
+            android:textSize="16sp"
+            android:textAlignment="center"
+            android:fontFamily="@font/regular"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10sp"
+            android:textSize="18sp"
+            android:textAlignment="center"
+            android:fontFamily="@font/bold"
+            android:text="@string/description"/>
+
+        <TextView
+            android:id="@+id/description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp"
+            android:textSize="16sp"
+            android:textAlignment="center"
+            android:fontFamily="@font/regular"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10sp"
+            android:textSize="18sp"
+            android:textAlignment="center"
+            android:fontFamily="@font/bold"
+            android:text="@string/socials"/>
+
+        <TextView
+            android:id="@+id/website"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5sp"
+            android:textSize="16sp"
+            android:textAlignment="center"
+            android:fontFamily="@font/regular"/>
+
+        <TextView
+            android:id="@+id/twitter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5sp"
+            android:textSize="16sp"
+            android:textAlignment="center"
+            android:fontFamily="@font/regular"/>
+
+        <TextView
+            android:id="@+id/wikipedia"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5sp"
+            android:paddingBottom="10dp"
+            android:textSize="16sp"
+            android:textAlignment="center"
+            android:fontFamily="@font/regular"/>
+    </LinearLayout>
+</ScrollView>

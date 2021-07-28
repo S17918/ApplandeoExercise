@@ -7,7 +7,7 @@ import com.applandeo.excercise.models.Mission
 import com.applandeo.excercise.requests.responses.MissionResponse
 import io.reactivex.rxjava3.schedulers.Schedulers
 
-class ClientApi {
+class ClientApi{
     private val missions: MutableLiveData<List<Mission>> = MutableLiveData()
 
     fun getMissions(): LiveData<List<Mission>> {

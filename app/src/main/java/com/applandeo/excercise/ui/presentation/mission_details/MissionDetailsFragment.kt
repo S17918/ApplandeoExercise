@@ -10,23 +10,15 @@ import com.applandeo.excercise.R
 
 class MissionDetailsFragment : Fragment() {
 
-    companion object {
-        fun newInstance() = MissionDetailsFragment()
-    }
-
     private lateinit var viewModel: MissionDetailsViewModel
 
-    override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?,
-        savedInstanceState: Bundle?
-    ): View? {
+    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         return inflater.inflate(R.layout.mission_details_fragment, container, false)
     }
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
         viewModel = ViewModelProvider(this).get(MissionDetailsViewModel::class.java)
-        // TODO: Use the ViewModel
     }
 
 }

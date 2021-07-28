@@ -1,5 +1,7 @@
 <resources>
-    <string name="app_name">Applandeo Excercise</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="app_name">Applandeo Exercise</string>
+    <string name="manufacturers">Manufacturers:</string>
+    <string name="payloads">Payloads:</string>
+    <string name="description">Description:</string>
+    <string name="socials">Socials:</string>
 </resources>
