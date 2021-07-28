@@ -22,7 +22,6 @@ class SingleActivity : AppCompatActivity() {
             androidContext(this@SingleActivity)
             modules(RepositoryModule.repositoryModule)
         }
-
         val navController = findNavController(R.id.main_nav_host_fragment)
         val appBarConfiguration = AppBarConfiguration(navController.graph)
         findViewById<Toolbar>(R.id.toolbar)

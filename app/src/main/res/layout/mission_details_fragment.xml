@@ -18,7 +18,7 @@
             android:layout_margin="50sp"/>
 
         <TextView
-            android:id="@+id/mission_name"
+            android:id="@+id/details_mission_name"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:padding="10sp"
@@ -27,7 +27,7 @@
             android:fontFamily="@font/bold"/>
 
         <TextView
-            android:id="@+id/mission_id"
+            android:id="@+id/details_mission_id"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:paddingBottom="10dp"
@@ -45,7 +45,7 @@
             android:text="@string/manufacturers"/>
 
         <TextView
-            android:id="@+id/manufacturers"
+            android:id="@+id/details_manufacturers"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:paddingBottom="10dp"
@@ -63,7 +63,7 @@
             android:text="@string/payloads"/>
 
         <TextView
-            android:id="@+id/payload_ids"
+            android:id="@+id/details_payload_ids"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:paddingBottom="10dp"
@@ -81,7 +81,7 @@
             android:text="@string/description"/>
 
         <TextView
-            android:id="@+id/description"
+            android:id="@+id/details_description"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:paddingBottom="10dp"
@@ -99,29 +99,32 @@
             android:text="@string/socials"/>
 
         <TextView
-            android:id="@+id/website"
+            android:id="@+id/details_website"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:padding="5sp"
             android:textSize="16sp"
+            android:autoLink="web"
             android:textAlignment="center"
             android:fontFamily="@font/regular"/>
 
         <TextView
-            android:id="@+id/twitter"
+            android:id="@+id/details_twitter"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:padding="5sp"
             android:textSize="16sp"
+            android:autoLink="web"
             android:textAlignment="center"
             android:fontFamily="@font/regular"/>
 
         <TextView
-            android:id="@+id/wikipedia"
+            android:id="@+id/details_wikipedia"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:padding="5sp"
             android:paddingBottom="10dp"
+            android:autoLink="web"
             android:textSize="16sp"
             android:textAlignment="center"
             android:fontFamily="@font/regular"/>

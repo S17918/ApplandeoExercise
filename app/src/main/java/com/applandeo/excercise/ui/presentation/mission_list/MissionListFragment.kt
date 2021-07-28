@@ -10,7 +10,8 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.applandeo.excercise.R
 import com.applandeo.excercise.adapters.MissionRecyclerAdapter
-import com.applandeo.excercise.adapters.OnMissionListener
+import com.applandeo.excercise.util.OnMissionListener
+import com.applandeo.excercise.models.Mission
 import org.koin.androidx.viewmodel.ext.android.viewModel
 
 class MissionListFragment : Fragment(), OnMissionListener {
@@ -46,6 +47,9 @@ class MissionListFragment : Fragment(), OnMissionListener {
     }
 
     override fun onMissionClick(pos: Int) {
-        findNavController().navigate(R.id.showMission)
+        val mission: Mission = viewModel.getMissions().value!![pos]
+        val bundle = Bundle()
+        bundle.putParcelable("mission", mission)
+        findNavController().navigate(R.id.showMission, bundle)
     }
 }

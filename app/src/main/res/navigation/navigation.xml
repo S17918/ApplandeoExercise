@@ -16,6 +16,5 @@
     <fragment
         android:id="@+id/missionDetailsFragment"
         android:name="com.applandeo.excercise.ui.presentation.mission_details.MissionDetailsFragment"
-        android:label="mission_details_fragment"
         tools:layout="@layout/mission_details_fragment" />
 </navigation>

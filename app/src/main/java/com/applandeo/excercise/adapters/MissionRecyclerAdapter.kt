@@ -7,6 +7,7 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.applandeo.excercise.R
 import com.applandeo.excercise.models.Mission
+import com.applandeo.excercise.util.OnMissionListener
 
 class MissionRecyclerAdapter(private val clickListener: OnMissionListener) : RecyclerView.Adapter<MissionRecyclerAdapter.ViewHolder>() {
 
