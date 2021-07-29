@@ -45,7 +45,7 @@ class MissionRecyclerAdapter(private val clickListener: OnMissionListener) : Rec
 
         fun bind(mission: Mission){
             missionName?.text = mission.mission_name
-            missionId?.text = mission.mission_id
+            missionId?.text = "ID: " + mission.mission_id
         }
 
         override fun onClick(v: View?) {

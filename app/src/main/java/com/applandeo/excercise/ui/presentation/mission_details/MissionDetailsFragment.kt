@@ -42,8 +42,8 @@ class MissionDetailsFragment : Fragment() {
 
         missionName?.text = mission.mission_name
         missionId?.text = "ID: " + mission.mission_id
-        missionManufacturers?.text = mission.manufacturers.toString().replace("[", "").replace("]", "").replace(",", "\n")
-        missionPayloads?.text = mission.payload_ids.toString().replace("[", "").replace("]", "").replace(",", "\n")
+        missionManufacturers?.text = mission.manufacturers.toString().replace("[", "").replace("]", "").replace(", ", "\n")
+        missionPayloads?.text = mission.payload_ids.toString().replace("[", "").replace("]", "").replace(", ", "\n")
         missionDescription?.text = mission.description
         missionWebsite?.text = mission.website
         missionTwitter?.text = mission.twitter
