@@ -68,7 +68,7 @@ dependencies {
 
     //RxJava
     implementation 'io.reactivex.rxjava3:rxjava:3.0.13'
-    implementation 'androidx.compose.runtime:runtime-rxjava3:1.0.0-rc02'
+    implementation 'androidx.compose.runtime:runtime-rxjava3:1.0.0'
 
     //Retrofit adapter for RxJava3
     implementation 'com.squareup.retrofit2:adapter-rxjava3:2.9.0'

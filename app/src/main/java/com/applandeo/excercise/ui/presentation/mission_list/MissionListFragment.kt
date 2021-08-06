@@ -36,8 +36,8 @@ class MissionListFragment : Fragment(), OnMissionListener {
     private fun initRecyclerView(){
         recyclerView = requireView().findViewById(R.id.missions_list)
         adapter = MissionRecyclerAdapter(this)
-        recyclerView?.layoutManager = LinearLayoutManager(context)
-        recyclerView?.adapter = adapter
+        recyclerView.layoutManager = LinearLayoutManager(context)
+        recyclerView.adapter = adapter
     }
 
     private fun subscribeObservers(){

@@ -2,7 +2,6 @@ package com.applandeo.excercise.di
 
 import com.applandeo.excercise.repositories.MissionRepository
 import com.applandeo.excercise.repositories.MissionRepositoryImpl
-import com.applandeo.excercise.ui.presentation.mission_details.MissionDetailsViewModel
 import com.applandeo.excercise.ui.presentation.mission_list.MissionListViewModel
 import org.koin.androidx.viewmodel.dsl.viewModel
 import org.koin.core.module.Module
